@@ -1,0 +1,40 @@
+
+let words = 1;
+let letters = 0;
+let sentences = 0;
+let L;
+let S;
+
+
+for(let i = 0; i < messageTxt.length; i++){
+    if (    (messageTxt.charCodeAt(i) > 64  && messageTxt.charCodeAt(i) < 91 ) ||  (messageTxt.charCodeAt(i) > 96  && messageTxt.charCodeAt(i) < 123)) {
+        letters+=1;
+    }  
+
+    else if ( messageTxt[i] === " "){
+        words += 1;
+    }
+
+    else if ( messageTxt[i] === "." || messageTxt.at[i] === "?" || messageTxt[i] === "!"){
+        sentences += 1;
+    }
+
+}
+
+L = letters/words * 100;
+S =sentences/words * 100;
+
+const grade = Math.round(0.0588 * L - 0.296 * S - 15.8);
+
+if (grade < 1){
+    console.log("lower than grade 1");
+}
+
+else if ( grade > 16) {
+    console.log("above college level")
+}
+
+else {
+    console.log("This is grade " + grade + " level work")
+}
+

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-blue-lined-paper-background_23-2151105438.jpg");
+}
+
+
+
+.head {
+
+    padding: 0.25rem 0.5rem;
+    background-color: hsla(33, 78%, 91%, 0.661);
+    display: flex;
+    color: gray;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+fieldset {
+    margin: 100px;
+    background-color: hsla(34, 78%, 91%, 0.438);
+}
+
+textarea{
+    margin: 50px;
+    padding: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: hsla(0, 0%, 0%, 0.111);
+    border-radius: 20px;
+}
+
+button {
+    size: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#submitButton {
+    margin: 20px 10px ;
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    background-color: hsla(0, 27%, 55%, 0.31);
+    border-radius: 20px;
+}
+
+.btn {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: top;
+    align-items: center;
+}
+
+#submitButton:hover {
+    background-color: rgba(255, 140, 0, 0.574);
+    transform: scale(120%);
+    transition-duration: 1.5s;
+    
+}
+
+.txt {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+p {
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+
+#result {
+    margin-left: 545px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: hsla(0, 71%, 45%, 0.524);
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
